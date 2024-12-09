@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Beauti plaur</title>
+</head>
+<body>
+    <header>
+    <nav>
+    <label for="toggler"><i class="fa fa-bars"></i></label>
+    <input type ="checkbox" id="toggler" name="">
+    <div class="h0"></div>
+    <h1>S.N makeover salon</h1>
+    <div class="menu">
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#g1">Gallery</a></li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="h3">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    </nav>
+    </header>
+    <section>
+        <div id="s0">
+            <div class="s1">
+                <p>Enjoy Our Makeup Experience</p>
+            </div>
+            <div class="s2">
+                <p> We don't just make haircut and design.we make people's experience.</p>
+                <p>Beauty design and makeover was built on the belief that makeover and haircut should be special,
+                and carry that belief into evenything we do.</p>
+            </div>
+            <div class="s3">
+                <p>
+                 <button onclick="alert('please fill up the form by your valid Name ,E-mail, Phone Number and Password');"><a href="book.html">Book your Day</a></button>
+                </p>
+             </div>
+        </div>
+    </section>
+    <main id="m2">
+    <artical>
+        <div id="body01">
+            <div class="body1">
+                <p class="head1">Welcome To Our Beauty design and makeover</p>
+                <p class="head2">We are sharing easy new ideas using minimal things
+                that will help you to prepare very beautiful makeover and beautiful haircut in your home.</p>
+                <p>
+                <button><a href="https://en.wikipedia.org/wiki/Restaurant">Read more</a></button>
+                </p>
+            </div>
+            <div class="body2">
+            </div>  
+            </div>
+            <p id="g1">Gallery</p>
+            <div id="body02">
+                <button onclick="prev()"><</button>
+                <div class="b1">
+                    <img id="slider" src="14.jpg" width="600px" height="400px"/>
+                </div>
+                <button onclick="next()">> </button>
+            </div>
+        <div id="body03">
+            <div class="body3">
+                <p>“Look after yourself from within, and your beauty will shine through on your skin.” -(Jana Elston)</p>
+                <p>“Beauty is the illumination of the soul.” -(John O’Donohue)</p>
+            </div>
+            <div class="body4"></div>
+            <div class="body5">
+                <p>“Life is too short to have boring hair.” -(Anonymous)</p>
+                <p>“The hair is the richest ornament of women.”-(Martin Luther)</p>
+            </div>
+        </div>
+    </artical>
+    </main>
+    <footer>
+        <div class="fot1">
+            <div id="fo1">
+              <h1 style="font-size:1.9rem;text-align:center;">About Us</h1>
+             
+              <p style="text-align: justify;">We provide makeover and design should be special,
+                and carry that belief into evenything we do.
+                </p>
+             <p>Massage is not just a luxury it is a way to a happier healthier life.</p>
+            </div>
+            <div id="fo2">
+                <h1 style="font-size:1.9rem;text-align: center;">Contact Us</h1>
+                <p>Mob:**********</p>
+                <p>E-mail:abc@gmail.com</p>
+                <p>Address:Golapbag more,Burdwan,Purba Burdwan</p>
+                <p>Time: Mon-Sat:10:00-8:00</p>
+            </div>
+            <div id="fo3">
+                <h1 style="font-size:1.9rem;text-align: center;padding-left: 25px;">Services</h1>
+                <ul>
+                    <li><a href="#sb1">Home</a></li><br>
+                    <li><a href="#sb3">Gallery</a></li><br>
+                    <li><a href="#sb3">Booking</a></li><br>
+                    <li><a href="#sb4">Contact Us</a></li><br>
+                </ul>
+            </div>
+            <div id="fo4">
+                <h1 style="font-size:1.9rem;text-align: center;">Other links</h1>
+                <ul>
+                    <i class="fa fa-facebook"></i><br><br>
+                    <i class="fa fa-instagram"></i><br><br>
+                    <i class="fa fa-twitter"></i><br><br>
+                    <i class="fa fa-map-marker"></i><br><br>
+                </ul>
+            </div>
+        </div>
+        <div class="fot2">
+        <br>
+        <p style="text-align: center;font-size:1.2rem;color:aliceblue">Copyright © 2024,Beauty design and makeover, All rights reserved | This site is made by Shouvik Banerjee</p>
+        <br>
+        <h1 style="text-align: center; font-size: 30px;color:whitesmoke"></h1>
+        <h1 style="text-align: center; font-size: 30px;color:whitesmoke;text-decoration: underline;">Thank You</h1>
+        </div>
+    </footer>
+    <script>
+        var images = ['2.jpg', '3.jpg', '4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'];
+var num = 0;
+function next() {
+var slider = document.getElementById('slider');
+num++;
+if(num >= images.length) {
+    num = 0;
+}
+slider.src = images[num];
+}
+function prev() {
+var slider = document.getElementById('slider');
+num--;
+if(num < 0) {
+    num = images.length-1;
+}
+slider.src = images[num];
+}
+    </script>
+</body>
+</html>
